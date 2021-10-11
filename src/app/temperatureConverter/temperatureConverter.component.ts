@@ -9,10 +9,6 @@ import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
 export class TemperatureConverter implements OnInit {
   @ViewChild("cel") cels: ElementRef;
   @ViewChild("fah") fahr: ElementRef;
-  tempForm = new FormGroup({
-    celsius: new FormControl(""),
-    fahrenheit: new FormControl(""),
-  });
 
   ngOnInit() {
     // C = (F − 32) × 5/9
