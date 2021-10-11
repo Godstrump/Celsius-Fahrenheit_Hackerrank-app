@@ -2,11 +2,11 @@
 
   <section class="layout-row align-items-center justify-content-between">
     <label>Celsius: </label>
-    <input type="number" class="large" #cel data-test-id="celsius-input" (keyup)="convertCelsius($event.target.value)"/>
+    <input type="number" class="large" [value]="c" data-test-id="celsius-input" (input)="convertCelsius($event.target.value)"/>
   </section>
 
   <section class="layout-row align-items-center justify-content-between">
       <label>Fahrenheit: </label>
-      <input type="number" class="large" data-test-id="fahrenheit-input" #fah (keyup)="convertFahrenheit($event.target.value)"/>
+      <input type="number" [value]="f" class="large" data-test-id="fahrenheit-input" (input)="convertFahrenheit($event.target.value)"/>
   </section>
 </div>
